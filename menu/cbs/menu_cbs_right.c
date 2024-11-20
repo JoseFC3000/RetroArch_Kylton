@@ -955,7 +955,7 @@ static int action_right_state_slot(unsigned type, const char *label,
    struct menu_state *menu_st = menu_state_get_ptr();
 
    settings->ints.state_slot++;
-   if (settings->ints.state_slot > 999)
+   if (settings->ints.state_slot > 9)
       settings->ints.state_slot = -1;
 
    if (menu_st->driver_ctx)
