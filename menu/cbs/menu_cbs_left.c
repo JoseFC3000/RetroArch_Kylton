@@ -953,7 +953,7 @@ static int action_left_state_slot(unsigned type, const char *label,
 
    settings->ints.state_slot--;
    if (settings->ints.state_slot < -1)
-      settings->ints.state_slot = 9;
+      settings->ints.state_slot = 999;
 
    if (menu_st->driver_ctx)
    {
@@ -975,7 +975,7 @@ static int action_left_replay_slot(unsigned type, const char *label,
 
    settings->ints.replay_slot--;
    if (settings->ints.replay_slot < -1)
-      settings->ints.replay_slot = 9;
+      settings->ints.replay_slot = 999;
 
    if (menu_st->driver_ctx)
    {
