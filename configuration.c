@@ -4193,7 +4193,7 @@ static bool config_load_file(global_t *global,
    if (    (bool)RHMAP_HAS_STR(conf->entries_map, "content_history_size")
        && !(bool)RHMAP_HAS_STR(conf->entries_map, "content_favorites_size"))
    {
-      if (settings->uints.content_history_size > 999)
+      if (settings->uints.content_history_size > 9)
          settings->ints.content_favorites_size = -1;
       else
          settings->ints.content_favorites_size = (int)settings->uints.content_history_size;
