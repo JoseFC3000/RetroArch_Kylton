@@ -6624,7 +6624,7 @@ static enum runloop_state_enum runloop_check_state(
 
 #ifdef HAVE_GFX_WIDGETS
          if (dispwidget_get_ptr()->active)
-            gfx_widget_set_generic_message(msg, 10);
+            gfx_widget_set_generic_message(msg, 1000);
          else
 #endif
             runloop_msg_queue_push(msg, 2, 60, true, NULL,
