@@ -202,22 +202,6 @@ MSG_HASH(
    "Restart RetroArch application."
    )
 MSG_HASH(
-   MENU_ENUM_LABEL_VALUE_RESUME_CONTENT,
-   "Resume"
-   )
-MSG_HASH(
-   MENU_ENUM_SUBLABEL_RESUME_CONTENT,
-   "Resume the currently running content and leave the Quick Menu."
-   )
-MSG_HASH(
-   MENU_ENUM_LABEL_VALUE_RESTART_CONTENT,
-   "Restart"
-   )
-MSG_HASH(
-   MENU_ENUM_SUBLABEL_RESTART_CONTENT,
-   "Restart the content from the beginning."
-   )
-MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QUIT_RETROARCH,
    "Quit"
    )
