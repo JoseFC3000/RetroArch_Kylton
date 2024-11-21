@@ -975,7 +975,7 @@ static int action_left_replay_slot(unsigned type, const char *label,
 
    settings->ints.replay_slot--;
    if (settings->ints.replay_slot < -1)
-      settings->ints.replay_slot = 999;
+      settings->ints.replay_slot = 9;
 
    if (menu_st->driver_ctx)
    {
