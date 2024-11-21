@@ -6598,12 +6598,12 @@ static enum runloop_state_enum runloop_check_state(
          /* Wrap-around to 999 */
          if (check2 && !check1 && state_slot + addition < -1)
          {
-            state_slot = 10;
+            state_slot = 1000;
             check1     = true;
          }
       }
       /* Wrap-around to -1 (Auto) */
-      else if (state_slot + addition > 9)
+      else if (state_slot + addition > 999)
          state_slot = -2;
 
       if (check2)
@@ -6658,12 +6658,12 @@ static enum runloop_state_enum runloop_check_state(
          /* Wrap-around to 999 */
          if (check2 && !check1 && replay_slot + addition < -1)
          {
-            replay_slot = 10;
+            replay_slot = 1000;
             check1      = true;
          }
       }
       /* Wrap-around to -1 (Auto) */
-      else if (replay_slot + addition > 9)
+      else if (replay_slot + addition > 999)
          replay_slot    = -2;
 
       if (check2)
