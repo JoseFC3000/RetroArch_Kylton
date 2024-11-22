@@ -953,7 +953,7 @@ static int action_left_state_slot(unsigned type, const char *label,
 
    settings->ints.state_slot--;
    if (settings->ints.state_slot < 0)
-      settings->ints.state_slot = 10;
+      settings->ints.state_slot = 0;
 
    if (menu_st->driver_ctx)
    {
