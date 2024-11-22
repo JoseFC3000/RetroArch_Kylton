@@ -6596,15 +6596,15 @@ static enum runloop_state_enum runloop_check_state(
          addition                          = -1;
 
          /* Wrap-around to 999 */
-         if (check2 && !check1 && state_slot + addition < 100)
+         if (check2 && !check1 && state_slot + addition < -1)
          {
-            state_slot = 21;
+            state_slot = 11;
             check1     = true;
          }
       }
       /* Wrap-around to -1 (Auto) */
-      else if (state_slot + addition < 100)
-         state_slot = 19;
+      else if (state_slot + addition > 10)
+         state_slot = -1;
 
       if (check2)
       {
