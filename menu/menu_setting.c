@@ -2943,8 +2943,8 @@ static void setting_get_string_representation_state_slot(rarch_setting_t *settin
       return;
 
    snprintf(s, len, "%d", *setting->value.target.integer);
-   if (*setting->value.target.integer == -1)
-      strlcpy(s, "Auto", len);
+   if (*setting->value.target.integer == 0)
+      strlcpy(s, "Unlock Game", len);
 }
 
 static void setting_get_string_representation_percentage(rarch_setting_t *setting,
