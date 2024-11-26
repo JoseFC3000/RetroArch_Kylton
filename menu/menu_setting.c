@@ -2943,8 +2943,8 @@ static void setting_get_string_representation_state_slot(rarch_setting_t *settin
       return;
 
    snprintf(s, len, "%d", *setting->value.target.integer);
-   if (*setting->value.target.integer == 0)
-      strlcpy(s, "Unlock Game", len);
+   if (*setting->value.target.integer == -1)
+      strlcpy(s, "Auto", len);
 }
 
 static void setting_get_string_representation_percentage(rarch_setting_t *setting,
@@ -9811,7 +9811,7 @@ static bool setting_append_list(
          (*list)[list_info->index - 1].offset_by     = 0;
          (*list)[list_info->index - 1].get_string_representation =
             &setting_get_string_representation_state_slot;
-         menu_settings_list_current_add_range(list, list_info, 0, 20, 1, true, true);
+         menu_settings_list_current_add_range(list, list_info, 1, 20, 1, true, true);
 
 #ifdef HAVE_BSV_MOVIE
          CONFIG_INT(
