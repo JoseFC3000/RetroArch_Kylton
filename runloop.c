@@ -6596,7 +6596,7 @@ static enum runloop_state_enum runloop_check_state(
          addition                          = -1;
 
          /* Wrap-around to 999 */
-         if (check2 && !check1 && state_slot + addition < 0)
+         if (check2 && !check1 && state_slot + addition < 1)
          {
             state_slot = 21;
             check1     = true;
@@ -6604,7 +6604,7 @@ static enum runloop_state_enum runloop_check_state(
       }
       /* Wrap-around to -1 (Auto) */
       else if (state_slot + addition > 20)
-         state_slot = -1;
+         state_slot = 0;
 
       if (check2)
       {
