@@ -6600,6 +6600,7 @@ static enum runloop_state_enum runloop_check_state(
          {
             state_slot = 22;
             check1     = true;
+            state_slot = 21;
          }
       }
       /* Wrap-around to -1 (Auto) */
