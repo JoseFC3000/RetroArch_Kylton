@@ -6592,7 +6592,7 @@ static enum runloop_state_enum runloop_check_state(
       if (!check2)
       {
          check2                            = should_slot_decrease && !old_should_slot_decrease;
-         check1                            = state_slot > 0;
+         check1                            = state_slot > 1;
          addition                          = -1;
 
          /* Wrap-around to 999 */
