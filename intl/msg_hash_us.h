@@ -15052,6 +15052,10 @@ MSG_HASH(
    "Auto-loading save state from \"%s\" failed."
    )
 MSG_HASH(
+   MSG_AUTOLOADING_SAVESTATE_SUCCEEDED,
+   "Auto-loading optimal State"
+   )
+MSG_HASH(
    MSG_DEVICE_CONFIGURED_IN_PORT,
    "configured in port"
    )
