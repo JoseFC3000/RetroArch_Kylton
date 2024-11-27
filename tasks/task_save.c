@@ -814,7 +814,6 @@ not_found:
 
       snprintf(msg,
             msg_size - 1,
-            "%s \"%s\".",
             msg_hash_to_str(MSG_FAILED_TO_LOAD_STATE),
             path_basename(state->path));
 
