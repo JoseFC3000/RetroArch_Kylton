@@ -14645,7 +14645,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_LOADED_STATE_FROM_SLOT,
-   "Loaded state from slot #%d."
+   "Loaded state from slot #%d"
    )
 MSG_HASH(
    MSG_LOADED_STATE_FROM_SLOT_AUTO,
@@ -14849,7 +14849,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_SAVED_STATE_TO_SLOT,
-   "Saved state to slot #%d."
+   "Saved state to slot #%d"
    )
 MSG_HASH(
    MSG_SAVED_STATE_TO_SLOT_AUTO,
@@ -15053,7 +15053,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_AUTOLOADING_SAVESTATE_SUCCEEDED,
-   "Auto-loading save state from \"%s\" succeeded."
+   ""
    )
 MSG_HASH(
    MSG_DEVICE_CONFIGURED_IN_PORT,
