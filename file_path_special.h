@@ -34,7 +34,7 @@ RETRO_BEGIN_DECLS
 #define FILE_PATH_LUTRO_PLAYLIST   "Lutro.lpl"
 #define FILE_PATH_NUL              "nul"
 #define FILE_PATH_CGP_EXTENSION ".cgp"
-#define FILE_PATH_GLSLP_EXTENSION ""
+#define FILE_PATH_GLSLP_EXTENSION ".glslp"
 #define FILE_PATH_SLANGP_EXTENSION ".slangp"
 #define FILE_PATH_AUTO_EXTENSION ".auto"
 #define FILE_PATH_BSV_EXTENSION ".replay"
