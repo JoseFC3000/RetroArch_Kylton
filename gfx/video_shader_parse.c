@@ -2386,7 +2386,7 @@ const char *video_shader_get_preset_extension(enum rarch_shader_type type)
    switch (type)
    {
       case RARCH_SHADER_GLSL:
-         return ".glslp";
+         return "";
       case RARCH_SHADER_SLANG:
          return ".slangp";
       case RARCH_SHADER_HLSL:
