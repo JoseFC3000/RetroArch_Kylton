@@ -1753,7 +1753,7 @@ void ShaderParamsDialog::onShaderLoadPresetClicked()
    if (video_shader_is_supported(RARCH_SHADER_GLSL))
    {
       filter.append(QLatin1Literal(" *"));
-      filter.append(".glslp");
+      filter.append("");
    }
 
    if (video_shader_is_supported(RARCH_SHADER_SLANG))
