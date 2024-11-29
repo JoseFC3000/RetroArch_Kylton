@@ -367,7 +367,7 @@ static void video_shader_replace_wildcards(char *inout_absolute_path,
                if (video_shader_is_supported(RARCH_SHADER_CG))
                   strlcpy(replace_text, "cgp", sizeof(replace_text));
                else if (video_shader_is_supported(RARCH_SHADER_GLSL))
-                  strlcpy(replace_text, "glslp", sizeof(replace_text));
+                  strlcpy(replace_text, "", sizeof(replace_text));
                else if (video_shader_is_supported(RARCH_SHADER_SLANG))
                   strlcpy(replace_text, "slangp", sizeof(replace_text));
                break;
