@@ -2424,7 +2424,7 @@ enum rarch_shader_type video_shader_get_type_from_ext(
    if (is_preset)
       *is_preset =
          string_is_equal_case_insensitive(ext, "cgp")   ||
-         string_is_equal_case_insensitive(ext, "glslp") ||
+         string_is_equal_case_insensitive(ext, "") ||
          string_is_equal_case_insensitive(ext, "slangp");
 
    if (string_is_equal_case_insensitive(ext, "cgp") ||
@@ -2432,7 +2432,7 @@ enum rarch_shader_type video_shader_get_type_from_ext(
       )
       return RARCH_SHADER_CG;
 
-   if (string_is_equal_case_insensitive(ext, "glslp") ||
+   if (string_is_equal_case_insensitive(ext, "") ||
        string_is_equal_case_insensitive(ext, "glsl")
       )
       return RARCH_SHADER_GLSL;
