@@ -367,7 +367,7 @@ static void video_shader_replace_wildcards(char *inout_absolute_path,
                if (video_shader_is_supported(RARCH_SHADER_CG))
                   strlcpy(replace_text, "cgp", sizeof(replace_text));
                else if (video_shader_is_supported(RARCH_SHADER_GLSL))
-                  strlcpy(replace_text, "", sizeof(replace_text));
+                  strlcpy(replace_text, "glslp", sizeof(replace_text));
                else if (video_shader_is_supported(RARCH_SHADER_SLANG))
                   strlcpy(replace_text, "slangp", sizeof(replace_text));
                break;
@@ -2424,7 +2424,7 @@ enum rarch_shader_type video_shader_get_type_from_ext(
    if (is_preset)
       *is_preset =
          string_is_equal_case_insensitive(ext, "cgp")   ||
-         string_is_equal_case_insensitive(ext, "") ||
+         string_is_equal_case_insensitive(ext, "glslp") ||
          string_is_equal_case_insensitive(ext, "slangp");
 
    if (string_is_equal_case_insensitive(ext, "cgp") ||
@@ -2432,7 +2432,7 @@ enum rarch_shader_type video_shader_get_type_from_ext(
       )
       return RARCH_SHADER_CG;
 
-   if (string_is_equal_case_insensitive(ext, "") ||
+   if (string_is_equal_case_insensitive(ext, "glslp") ||
        string_is_equal_case_insensitive(ext, "glsl")
       )
       return RARCH_SHADER_GLSL;
@@ -3008,11 +3008,9 @@ bool video_shader_apply_shader(
             msg[++_len]            = ' ';
             if (preset_file)
             {
-               msg[++_len]         = ' ';
                msg[++_len]         = '\0';
                _len               += strlcpy(msg + _len,
                      preset_file,    sizeof(msg) - _len);
-               msg[  _len]         = ' ';
                msg[++_len]         = '\0';
             }
             else
