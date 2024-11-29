@@ -3004,7 +3004,7 @@ bool video_shader_apply_shader(
             /* Display message */
             const char *msg_shader = msg_hash_to_str(MSG_SHADER);
             size_t _len            = strlcpy(msg, msg_shader, sizeof(msg));
-            msg[  _len]            = ' ';
+            msg[  _len]            = ':';
             msg[++_len]            = ' ';
             if (preset_file)
             {
