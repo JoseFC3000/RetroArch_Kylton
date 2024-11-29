@@ -3006,9 +3006,11 @@ bool video_shader_apply_shader(
             size_t _len            = strlcpy(msg, msg_shader, sizeof(msg));
             if (preset_file)
             {
+               msg[++_len]         = '"';
                msg[++_len]         = '\0';
                _len               += strlcpy(msg + _len,
                      preset_file,    sizeof(msg) - _len);
+               msg[  _len]         = '"';
                msg[++_len]         = '\0';
             }
             else
