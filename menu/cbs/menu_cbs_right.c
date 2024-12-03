@@ -956,7 +956,7 @@ static int action_right_state_slot(unsigned type, const char *label,
 
    settings->ints.state_slot++;
    if (settings->ints.state_slot > 20)
-      settings->ints.state_slot = 1;
+      settings->ints.state_slot = 20;
 
    if (menu_st->driver_ctx)
    {
