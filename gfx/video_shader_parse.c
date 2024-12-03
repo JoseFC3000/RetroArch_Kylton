@@ -3030,7 +3030,7 @@ bool video_shader_apply_shader(
                      MESSAGE_QUEUE_ICON_DEFAULT, MESSAGE_QUEUE_CATEGORY_INFO);
          }
 
-      RARCH_LOG("[Shaders]: %s: \"%s\".\n",
+         RARCH_LOG("[Shaders]: %s: \"%s\".\n",
                msg_hash_to_str(MSG_APPLYING_SHADER),
                preset_path ? preset_path : "null");
 
