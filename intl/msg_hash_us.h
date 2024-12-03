@@ -14281,11 +14281,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_DISK_CLOSED,
-   "Closed virtual disc tray."
+   "Closed virtual disc tray"
    )
 MSG_HASH(
    MSG_DISK_EJECTED,
-   "Ejected virtual disc tray."
+   "Ejected virtual disc tray"
    )
 MSG_HASH(
    MSG_DOWNLOADING,
