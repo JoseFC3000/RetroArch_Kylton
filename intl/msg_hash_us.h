@@ -14645,7 +14645,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_LOADED_STATE_FROM_SLOT,
-   "Loaded state from slot #%d"
+   "Loaded State from Slot #%d"
    )
 MSG_HASH(
    MSG_LOADED_STATE_FROM_SLOT_AUTO,
@@ -14849,7 +14849,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_SAVED_STATE_TO_SLOT,
-   "Saved state to slot #%d"
+   "Saved State to Slot #%d"
    )
 MSG_HASH(
    MSG_SAVED_STATE_TO_SLOT_AUTO,
