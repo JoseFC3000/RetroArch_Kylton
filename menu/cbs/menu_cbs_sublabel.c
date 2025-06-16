@@ -1530,25 +1530,6 @@ static int action_bind_sublabel_subsystem_load(
    return 0;
 }
 
-static int action_bind_sublabel_disk_image_append(
-      file_list_t *list,
-      unsigned type, unsigned i,
-      const char *label, const char *path,
-      char *s, size_t len)
-{
-   enum msg_hash_enums enum_idx  = MENU_ENUM_SUBLABEL_DISK_IMAGE_APPEND;
-   rarch_system_info_t *sys_info = &runloop_state_get_ptr()->system;
-
-   /* Check whether disk is currently ejected */
-   if (sys_info &&
-       disk_control_get_eject_state(&sys_info->disk_control))
-      enum_idx = MENU_ENUM_SUBLABEL_DISK_IMAGE_APPEND_TRAY_OPEN;
-
-   strlcpy(s, msg_hash_to_str(enum_idx), len);
-
-   return 1;
-}
-
 static int action_bind_sublabel_remap_kbd_sublabel(
       file_list_t *list,
       unsigned type, unsigned i,
@@ -3201,9 +3182,6 @@ int menu_cbs_init_bind_sublabel(menu_file_list_cbs_t *cbs,
 #ifdef HAVE_XMB
             BIND_ACTION_SUBLABEL(cbs, action_bind_sublabel_xmb_switch_icons);
 #endif
-            break;
-         case MENU_ENUM_LABEL_DISK_IMAGE_APPEND:
-            BIND_ACTION_SUBLABEL(cbs, action_bind_sublabel_disk_image_append);
             break;
          case MENU_ENUM_LABEL_SUBSYSTEM_ADD:
             BIND_ACTION_SUBLABEL(cbs, action_bind_sublabel_subsystem_add);
