@@ -9739,10 +9739,6 @@ MSG_HASH(
    "Insert disc corresponding to 'Current Disc Index' and close virtual disc tray. If 'Pause Content When Menu Is Active' is enabled, some cores may not register changes unless content is resumed for a few seconds after each disc control action."
    )
 MSG_HASH(
-   MENU_ENUM_SUBLABEL_DISK_IMAGE_APPEND_TRAY_OPEN,
-   "Select a new disc from the filesystem and insert it without closing the virtual disc tray.\nNOTE: This is a legacy feature. It is instead recommended to load multi-disc titles via M3U playlists, which allow disc selection using the 'Current Disc Index' option."
-   )
-MSG_HASH(
    MENU_ENUM_LABEL_VALUE_DISK_INDEX,
    "Current Disc Index"
    )
