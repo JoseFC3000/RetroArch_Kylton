@@ -1271,8 +1271,6 @@ static int menu_cbs_init_bind_title_compare_label(menu_file_list_cbs_t *cbs,
          action_get_title_video_shader_preset_save},
       {MENU_ENUM_LABEL_MANAGEMENT,
          action_get_title_action_generic},
-      {MENU_ENUM_LABEL_DISK_IMAGE_APPEND,
-         action_get_title_disk_image_append},
       {MENU_ENUM_LABEL_VIDEO_SHADER_PRESET,
          action_get_title_video_shader_preset},
       {MENU_ENUM_LABEL_VIDEO_SHADER_PRESET_PREPEND,
@@ -1676,9 +1674,6 @@ static int menu_cbs_init_bind_title_compare_label(menu_file_list_cbs_t *cbs,
             break;
          case MENU_ENUM_LABEL_VIDEO_SHADER_PRESET_SAVE:
             BIND_ACTION_GET_TITLE(cbs, action_get_title_action_generic);
-            break;
-         case MENU_ENUM_LABEL_DISK_IMAGE_APPEND:
-            BIND_ACTION_GET_TITLE(cbs, action_get_title_disk_image_append);
             break;
          case MENU_ENUM_LABEL_VIDEO_SHADER_PRESET:
             BIND_ACTION_GET_TITLE(cbs, action_get_title_video_shader_preset);
