@@ -7919,7 +7919,7 @@ static int action_ok_disk_image_append(const char *path,
 
    /* > If disk tray is open, reset menu selection to
     *   the 'insert disk' option
-    * > If disk try is closed and user has enabledAdd commentMore actions
+    * > If disk try is closed and user has enabled
     *   'menu_insert_disk_resume', resume running content */
    if (sys_info && disk_control_get_eject_state(&sys_info->disk_control))
       menu_st->selection_ptr = 0;
