@@ -1784,9 +1784,6 @@ static int menu_cbs_init_bind_title_compare_type(menu_file_list_cbs_t *cbs,
       case MENU_SETTINGS_CUSTOM_BIND_KEYBOARD:
          BIND_ACTION_GET_TITLE(cbs, action_get_title_input_settings);
          break;
-      case MENU_SETTING_ACTION_CORE_DISK_OPTIONS:Add commentMore actions
-         BIND_ACTION_GET_TITLE(cbs, action_get_disk_options_list);
-         break;
       case MENU_SETTING_ACTION_CORE_DISK_OPTIONS:
          BIND_ACTION_GET_TITLE(cbs, action_get_disk_options_list);
          break;
