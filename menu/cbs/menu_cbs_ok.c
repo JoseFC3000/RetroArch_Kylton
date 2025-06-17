@@ -7911,6 +7911,22 @@ static int action_ok_disk_image_append(const char *path,
          strlcpy(image_path, menu_path, sizeof(image_path));
    }
 
+   /* Append image */
+   command_event(CMD_EVENT_DISK_APPEND_IMAGE, image_path);
+
+   /* In all cases, return to the disk options menu */
+   menu_entries_flush_stack(msg_hash_to_str(MENU_ENUM_LABEL_DISK_OPTIONS), 0);
+
+   /* > If disk tray is open, reset menu selection to
+    *   the 'insert disk' option
+    * > If disk try is closed and user has enabledAdd commentMore actions
+    *   'menu_insert_disk_resume', resume running content */
+   if (sys_info && disk_control_get_eject_state(&sys_info->disk_control))
+      menu_st->selection_ptr = 0;
+   else if (menu_insert_disk_resume)
+      generic_action_ok_command(CMD_EVENT_RESUME);
+
+   return 0;
 }
 
 static int action_ok_manual_content_scan_start(const char *path,
@@ -8875,6 +8891,7 @@ static int menu_cbs_init_bind_ok_compare_label(menu_file_list_cbs_t *cbs,
          {MENU_ENUM_LABEL_NETWORK_INFORMATION,                 action_ok_push_default},
          {MENU_ENUM_LABEL_ACHIEVEMENT_LIST,                    action_ok_push_default},
          {MENU_ENUM_LABEL_ACHIEVEMENT_LIST_HARDCORE,           action_ok_push_default},
+         {MENU_ENUM_LABEL_DISK_OPTIONS,                        action_ok_push_default},
          {MENU_ENUM_LABEL_SETTINGS,                            action_ok_push_default},
          {MENU_ENUM_LABEL_FRONTEND_COUNTERS,                   action_ok_push_default},
          {MENU_ENUM_LABEL_CORE_COUNTERS,                       action_ok_push_default},
@@ -9248,6 +9265,9 @@ static int menu_cbs_init_bind_ok_compare_type(menu_file_list_cbs_t *cbs,
             BIND_ACTION_OK(cbs, action_ok_push_dropdown_item_netplay_mitm_server);
             break;
 #endif
+         case MENU_SETTING_ACTION_CORE_DISK_OPTIONS:
+            BIND_ACTION_OK(cbs, action_ok_push_default);
+            break;
          case FILE_TYPE_PLAYLIST_ENTRY:
             BIND_ACTION_OK(cbs, action_ok_playlist_entry_collection);
             break;
