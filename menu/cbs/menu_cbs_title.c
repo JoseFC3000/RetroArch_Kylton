@@ -1578,9 +1578,6 @@ static int menu_cbs_init_bind_title_compare_label(menu_file_list_cbs_t *cbs,
          case MENU_ENUM_LABEL_SHADER_OPTIONS:
             BIND_ACTION_GET_TITLE(cbs, action_get_shader_options_list);
             break;
-         case MENU_ENUM_LABEL_DISK_OPTIONS:
-            BIND_ACTION_GET_TITLE(cbs, action_get_disk_options_list);
-            break;
          case MENU_ENUM_LABEL_FRONTEND_COUNTERS:
             BIND_ACTION_GET_TITLE(cbs, action_get_frontend_counters_list);
             break;
