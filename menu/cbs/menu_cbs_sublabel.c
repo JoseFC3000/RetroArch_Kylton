@@ -3220,9 +3220,6 @@ int menu_cbs_init_bind_sublabel(menu_file_list_cbs_t *cbs,
          case MENU_ENUM_LABEL_DISK_INDEX:
             BIND_ACTION_SUBLABEL(cbs, action_bind_sublabel_disk_index);
             break;
-         case MENU_ENUM_LABEL_DISK_OPTIONS:
-            BIND_ACTION_SUBLABEL(cbs, action_bind_sublabel_disk_options);
-            break;
          case MENU_ENUM_LABEL_NETPLAY_INPUT_LATENCY_FRAMES_RANGE:
             BIND_ACTION_SUBLABEL(cbs, action_bind_sublabel_input_latency_frames_range);
             break;
