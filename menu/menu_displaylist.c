@@ -5260,14 +5260,6 @@ static unsigned menu_displaylist_parse_disk_options(file_list_t *list)
                MENU_SETTINGS_CORE_DISK_OPTIONS_DISK_CYCLE_TRAY_STATUS, 0, 0, NULL))
          count++;
 
-   /* Always show a 'DISK_IMAGE_APPEND' entry
-    * > If tray is currently shut, this will:
-    *   - Open tray
-    *   - Append disk image
-    *   - Close tray
-    * > If tray is currently open, this will
-    *   only append a disk image */
-
    return count;
 }
 
