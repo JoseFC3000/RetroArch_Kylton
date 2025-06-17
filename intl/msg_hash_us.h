@@ -9108,6 +9108,14 @@ MSG_HASH(
    "Set up cheat codes."
    )
 MSG_HASH(
+   MENU_ENUM_LABEL_VALUE_DISK_OPTIONS,
+   "Disc Control"
+   )
+MSG_HASH(
+   MENU_ENUM_SUBLABEL_DISK_OPTIONS,
+   "Disc image management."
+   )
+MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SHADER_OPTIONS,
    "Shaders"
    )
