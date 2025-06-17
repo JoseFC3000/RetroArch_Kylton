@@ -5267,12 +5267,6 @@ static unsigned menu_displaylist_parse_disk_options(file_list_t *list)
     *   - Close tray
     * > If tray is currently open, this will
     *   only append a disk image */
-   if (menu_entries_append(list,
-            msg_hash_to_str(MENU_ENUM_LABEL_VALUE_DISK_IMAGE_APPEND),
-            msg_hash_to_str(MENU_ENUM_LABEL_DISK_IMAGE_APPEND),
-            MENU_ENUM_LABEL_DISK_IMAGE_APPEND,
-            MENU_SETTINGS_CORE_DISK_OPTIONS_DISK_IMAGE_APPEND, 0, 0, NULL))
-      count++;
 
    return count;
 }
