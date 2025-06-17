@@ -9264,9 +9264,6 @@ static int menu_cbs_init_bind_ok_compare_type(menu_file_list_cbs_t *cbs,
             BIND_ACTION_OK(cbs, action_ok_push_dropdown_item_netplay_mitm_server);
             break;
 #endif
-         case MENU_SETTING_ACTION_CORE_DISK_OPTIONS:
-            BIND_ACTION_OK(cbs, action_ok_push_default);
-            break;
          case FILE_TYPE_PLAYLIST_ENTRY:
             BIND_ACTION_OK(cbs, action_ok_playlist_entry_collection);
             break;
