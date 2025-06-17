@@ -5260,11 +5260,6 @@ static unsigned menu_displaylist_parse_disk_options(file_list_t *list)
                MENU_SETTINGS_CORE_DISK_OPTIONS_DISK_CYCLE_TRAY_STATUS, 0, 0, NULL))
          count++;
 
-   /* If core does not support appending images,
-    * can stop here */
-   if (!disk_control_append_enabled(&sys_info->disk_control))
-      return count;
-
    /* Always show a 'DISK_IMAGE_APPEND' entry
     * > If tray is currently shut, this will:
     *   - Open tray
