@@ -601,7 +601,6 @@ DEFAULT_TITLE_MACRO(action_get_savestate_list,                  MENU_ENUM_LABEL_
 DEFAULT_TITLE_MACRO(action_get_input_remapping_options_list,    MENU_ENUM_LABEL_VALUE_CORE_INPUT_REMAPPING_OPTIONS)
 DEFAULT_TITLE_MACRO(action_get_remap_file_manager_list,         MENU_ENUM_LABEL_VALUE_REMAP_FILE_MANAGER_LIST)
 DEFAULT_TITLE_MACRO(action_get_shader_options_list,             MENU_ENUM_LABEL_VALUE_SHADER_OPTIONS)
-DEFAULT_TITLE_MACRO(action_get_disk_options_list,               MENU_ENUM_LABEL_VALUE_DISK_OPTIONS)
 DEFAULT_TITLE_MACRO(action_get_frontend_counters_list,          MENU_ENUM_LABEL_VALUE_FRONTEND_COUNTERS)
 DEFAULT_TITLE_MACRO(action_get_core_counters_list,              MENU_ENUM_LABEL_VALUE_CORE_COUNTERS)
 DEFAULT_TITLE_MACRO(action_get_recording_settings_list,         MENU_ENUM_LABEL_VALUE_RECORDING_SETTINGS)
