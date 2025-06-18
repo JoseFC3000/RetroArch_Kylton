@@ -2951,7 +2951,6 @@ static uintptr_t xmb_icon_get_id(xmb_handle_t *xmb,
       case MENU_ENUM_LABEL_ACHIEVEMENT_LIST_HARDCORE:
          return xmb->textures.list[XMB_TEXTURE_ACHIEVEMENT_LIST];
       case MENU_ENUM_LABEL_SAVESTATE_LIST:
-         return xmb->textures.list[XMB_TEXTURE_SHADER_OPTIONS];
       case MENU_ENUM_LABEL_SAVE_STATE:
       case MENU_ENUM_LABEL_CORE_CREATE_BACKUP:
       case MENU_ENUM_LABEL_GAME_SPECIFIC_CORE_OPTIONS_CREATE:
@@ -3643,7 +3642,7 @@ static uintptr_t xmb_icon_get_id(xmb_handle_t *xmb,
       return xmb->textures.list[XMB_TEXTURE_CHECKMARK];
    if (type == MENU_SETTING_ACTION)
       return xmb->textures.list[XMB_TEXTURE_SETTING];
-   return xmb->textures.list[XMB_TEXTURE_SUBSETTING];
+   return xmb->textures.list[XMB_TEXTURE_DISK_EJECT];
 }
 
 static int xmb_draw_item(
