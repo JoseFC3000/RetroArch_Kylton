@@ -8965,7 +8965,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_STATE_SLOT,
-   "State Slot"
+   "Current State Slot"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_STATE_SLOT,
@@ -8977,7 +8977,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SAVE_STATE,
-   "Save State to the selected Slot"
+   "Save State to the current Slot"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LOAD_STATE,
@@ -8985,7 +8985,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_LOAD_STATE,
-   "Load State from the selected Slot"
+   "Load State from the current Slot"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UNDO_LOAD_STATE,
@@ -9113,7 +9113,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_DISK_OPTIONS,
-   "Disc image management."
+   "Game Disc management"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SHADER_OPTIONS,
