@@ -2933,9 +2933,11 @@ static uintptr_t xmb_icon_get_id(xmb_handle_t *xmb,
       case MENU_ENUM_LABEL_CORE_CHEAT_OPTIONS:
          return xmb->textures.list[XMB_TEXTURE_CHEAT_OPTIONS];
       case MENU_ENUM_LABEL_DISK_OPTIONS:
+         return xmb->textures.list[XMB_TEXTURE_DISK_OPTIONS];
       case MENU_ENUM_LABEL_DISK_TRAY_EJECT:
-         return xmb->textures.list[XMB_TEXTURE_SHADER_OPTIONS];
+         return xmb->textures.list[XMB_TEXTURE_DISK_EJECT];
       case MENU_ENUM_LABEL_DISK_TRAY_INSERT:
+         return xmb->textures.list[XMB_TEXTURE_DISK_INSERT];
       case MENU_ENUM_LABEL_DISK_IMAGE_APPEND:
       case MENU_ENUM_LABEL_DISK_INDEX:
          return xmb->textures.list[XMB_TEXTURE_DISK_OPTIONS];
@@ -7019,6 +7021,10 @@ static const char *xmb_texture_path(unsigned id)
          return "core-cheat-options.png";
       case XMB_TEXTURE_DISK_OPTIONS:
          return "core-disk-options.png";
+      case XMB_TEXTURE_DISK_EJECT:
+         return "eject_disk.png";
+      case XMB_TEXTURE_DISK_INSERT:
+         return "insert_disk.png";
       case XMB_TEXTURE_SHADER_OPTIONS:
          return "core-shader-options.png";
       case XMB_TEXTURE_ACHIEVEMENT_LIST:
