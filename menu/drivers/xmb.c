@@ -2951,6 +2951,7 @@ static uintptr_t xmb_icon_get_id(xmb_handle_t *xmb,
       case MENU_ENUM_LABEL_ACHIEVEMENT_LIST_HARDCORE:
          return xmb->textures.list[XMB_TEXTURE_ACHIEVEMENT_LIST];
       case MENU_ENUM_LABEL_SAVESTATE_LIST:
+         return xmb->textures.list[XMB_TEXTURE_SHADER_OPTIONS];
       case MENU_ENUM_LABEL_SAVE_STATE:
       case MENU_ENUM_LABEL_CORE_CREATE_BACKUP:
       case MENU_ENUM_LABEL_GAME_SPECIFIC_CORE_OPTIONS_CREATE:
@@ -7239,7 +7240,7 @@ static bool xmb_context_reset_textures(
                || i == XMB_TEXTURE_KEY))
          {
             /* OSD Warning only if subsetting icon is missing */
-            if (     !gfx_display_reset_textures_list(xmb_texture_path(XMB_TEXTURE_LOADSTATE), iconpath, &xmb->textures.list[i], TEXTURE_FILTER_MIPMAP_LINEAR, NULL, NULL)
+            if (     !gfx_display_reset_textures_list(xmb_texture_path(XMB_TEXTURE_SUBSETTING), iconpath, &xmb->textures.list[i], TEXTURE_FILTER_MIPMAP_LINEAR, NULL, NULL)
                   && !(menu_xmb_theme == XMB_ICON_THEME_CUSTOM))
             {
                /* Do not draw icons if subsetting is missing */
