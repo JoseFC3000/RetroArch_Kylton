@@ -146,6 +146,7 @@ enum
    XMB_TEXTURE_DISK_INSERT,
    XMB_TEXTURE_DISK_CURRENT,
    XMB_TEXTURE_NO_ENTRIES,
+   XMB_TEXTURE_STATESLOTS_LIST,
    XMB_TEXTURE_SHADER_OPTIONS,
    XMB_TEXTURE_ACHIEVEMENT_LIST,
    XMB_TEXTURE_SCREENSHOT,
@@ -2954,6 +2955,7 @@ static uintptr_t xmb_icon_get_id(xmb_handle_t *xmb,
       case MENU_ENUM_LABEL_ACHIEVEMENT_LIST_HARDCORE:
          return xmb->textures.list[XMB_TEXTURE_ACHIEVEMENT_LIST];
       case MENU_ENUM_LABEL_SAVESTATE_LIST:
+         return xmb->textures.list[XMB_TEXTURE_STATESLOTS_LIST];
       case MENU_ENUM_LABEL_SAVE_STATE:
       case MENU_ENUM_LABEL_CORE_CREATE_BACKUP:
       case MENU_ENUM_LABEL_GAME_SPECIFIC_CORE_OPTIONS_CREATE:
@@ -7035,6 +7037,8 @@ static const char *xmb_texture_path(unsigned id)
          return "current_disk.png";
       case XMB_TEXTURE_NO_ENTRIES:
          return "no_entries.png";
+      case XMB_TEXTURE_STATESLOTS_LIST:
+         return "stateslots.png";     
       case XMB_TEXTURE_SHADER_OPTIONS:
          return "core-shader-options.png";
       case XMB_TEXTURE_ACHIEVEMENT_LIST:
