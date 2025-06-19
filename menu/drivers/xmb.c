@@ -3183,9 +3183,7 @@ static uintptr_t xmb_icon_get_id(xmb_handle_t *xmb,
       case MENU_ENUM_LABEL_OVERRIDE_FILE_SAVE_AS:
       case MENU_ENUM_LABEL_REMAP_FILE_SAVE_AS:
       case MENU_ENUM_LABEL_QUICK_MENU_SHOW_SAVESTATE_SUBMENU:
-         return xmb->textures.list[XMB_TEXTURE_SAVING];
       case MENU_ENUM_LABEL_QUICK_MENU_SHOW_SAVE_LOAD_STATE:
-         return xmb->textures.list[XMB_TEXTURE_LOG];
       case MENU_ENUM_LABEL_QUICK_MENU_SHOW_REPLAY:
          return xmb->textures.list[XMB_TEXTURE_SAVING];
       case MENU_ENUM_LABEL_LOGGING_SETTINGS:
