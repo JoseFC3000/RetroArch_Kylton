@@ -3642,7 +3642,7 @@ static uintptr_t xmb_icon_get_id(xmb_handle_t *xmb,
       return xmb->textures.list[XMB_TEXTURE_CHECKMARK];
    if (type == MENU_SETTING_ACTION)
       return xmb->textures.list[XMB_TEXTURE_SETTING];
-   return xmb->textures.list[XMB_TEXTURE_DISK_EJECT];
+   return xmb->textures.list[XMB_TEXTURE_SUBSETTING];
 }
 
 static int xmb_draw_item(
