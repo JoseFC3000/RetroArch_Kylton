@@ -2943,7 +2943,7 @@ static uintptr_t xmb_icon_get_id(xmb_handle_t *xmb,
       case MENU_ENUM_LABEL_DISK_TRAY_INSERT:
          return xmb->textures.list[XMB_TEXTURE_DISK_INSERT];
       case MENU_ENUM_LABEL_NO_ENTRIES_TO_DISPLAY:
-         return xmb->textures.list[XMB_TEXTURE_SHADER_OPTIONS];
+         return xmb->textures.list[XMB_TEXTURE_NO_ENTRIES_TO_DISPLAY];
       case MENU_ENUM_LABEL_DISK_IMAGE_APPEND:
       case MENU_ENUM_LABEL_DISK_INDEX:
          return xmb->textures.list[XMB_TEXTURE_DISK_CURRENT];
@@ -7033,6 +7033,8 @@ static const char *xmb_texture_path(unsigned id)
          return "insert_disk.png";
       case XMB_TEXTURE_DISK_CURRENT:
          return "current_disk.png";
+      case XMB_TEXTURE_NO_ENTRIES_TO_DISPLAY:
+         return "no_entries.png";
       case XMB_TEXTURE_SHADER_OPTIONS:
          return "core-shader-options.png";
       case XMB_TEXTURE_ACHIEVEMENT_LIST:
